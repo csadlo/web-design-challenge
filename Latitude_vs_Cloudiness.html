@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Latitude vs. Max Temperature</title>
+    <title>Latitude vs. Cloudiness</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -29,9 +29,9 @@
               Plots <span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item active" href="Latitude_vs_MaxTemp.html">Latitude VS. Max Temperature</a>
+              <a class="dropdown-item" href="Latitude_vs_MaxTemp.html">Latitude VS. Max Temperature</a>
               <a class="dropdown-item" href="Latitude_vs_Humidity.html">Latitude VS. Humidity</a>
-              <a class="dropdown-item" href="Latitude_vs_Cloudiness.html">Latitude VS. Cloudiness</a>
+              <a class="dropdown-item active" href="Latitude_vs_Cloudiness.html">Latitude VS. Cloudiness</a>
               <a class="dropdown-item" href="Latitude_vs_WindSpeed.html">Latitude VS. Wind Speed</a>
             </div>
           </li>
@@ -50,7 +50,7 @@
         <nav class="col-md-3 bd-sidebar bg-light d-md-block collapse py-3">
           <h4>Visualize vs. </h4>
           <ul class="nav flex-column">
-            <li class="nav-item by-5 border active">
+            <li class="nav-item">
               <a class="nav-link" href="Latitude_vs_MaxTemp.html">
                 <img class="img-thumbnail" src="assets\images\Latitude_vs_MaxTemp.png">
                 Maximum Temperature
@@ -62,7 +62,7 @@
                 Humidity
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item by-5 border active">
               <a class="nav-link" href="Latitude_vs_Cloudiness.html">
                 <img class="img-thumbnail" src="assets\images\Latitude_vs_Cloudiness.png">
                 Cloudiness
@@ -78,14 +78,15 @@
         </nav>
         <main role="main" class="col-md-9 ml-sm-auto px-md-4">
           <div class="d-flex justify-content-between align-items-center pt-3 pb-3 mb-3 border-bottom">
-            <h1 class="h2">Maximum Temperature</h1>
+            <h1 class="h2">Cloudiness</h1>
           </div>
           <div class="py-3">
-            <img class="img-fluid" src="assets\images\Latitude_vs_MaxTemp.png">
+            <img class="img-fluid" src="assets\images\Latitude_vs_Cloudiness.png">
             <p>
-              As expected, the weather becomes significantly warmer as the latitude draws closer 
-              to the equator. This is because, generally speaking, the sun is above the horizon 
-              for a longer period of time during the day when closer to the equator.
+              There doesn't seem to be any relationship between latitude and
+              cloudiness. We do see cloudiness values appear appear to cluster
+              along horizontal lines though. This is likely due to nearest interval
+              rounding operations.
             </p>
           </div>
         </main>

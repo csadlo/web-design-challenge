@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Latitude vs. Max Temperature</title>
+    <title>Latitude vs. Humidity</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -29,8 +29,8 @@
               Plots <span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item active" href="Latitude_vs_MaxTemp.html">Latitude VS. Max Temperature</a>
-              <a class="dropdown-item" href="Latitude_vs_Humidity.html">Latitude VS. Humidity</a>
+              <a class="dropdown-item" href="Latitude_vs_MaxTemp.html">Latitude VS. Max Temperature</a>
+              <a class="dropdown-item active" href="Latitude_vs_Humidity.html">Latitude VS. Humidity</a>
               <a class="dropdown-item" href="Latitude_vs_Cloudiness.html">Latitude VS. Cloudiness</a>
               <a class="dropdown-item" href="Latitude_vs_WindSpeed.html">Latitude VS. Wind Speed</a>
             </div>
@@ -50,13 +50,13 @@
         <nav class="col-md-3 bd-sidebar bg-light d-md-block collapse py-3">
           <h4>Visualize vs. </h4>
           <ul class="nav flex-column">
-            <li class="nav-item by-5 border active">
+            <li class="nav-item">
               <a class="nav-link" href="Latitude_vs_MaxTemp.html">
                 <img class="img-thumbnail" src="assets\images\Latitude_vs_MaxTemp.png">
                 Maximum Temperature
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item by-5 border active">
               <a class="nav-link" href="Latitude_vs_Humidity.html">
                 <img class="img-thumbnail" src="assets\images\Latitude_vs_Humidity.png">
                 Humidity
@@ -78,14 +78,23 @@
         </nav>
         <main role="main" class="col-md-9 ml-sm-auto px-md-4">
           <div class="d-flex justify-content-between align-items-center pt-3 pb-3 mb-3 border-bottom">
-            <h1 class="h2">Maximum Temperature</h1>
+            <h1 class="h2">Humidity</h1>
           </div>
           <div class="py-3">
-            <img class="img-fluid" src="assets\images\Latitude_vs_MaxTemp.png">
+            <img class="img-fluid" src="assets\images\Latitude_vs_Humidity.png">
             <p>
-              As expected, the weather becomes significantly warmer as the latitude draws closer 
-              to the equator. This is because, generally speaking, the sun is above the horizon 
-              for a longer period of time during the day when closer to the equator.
+              As expected, we see a lot of cities at 100% humidity. This usually
+              indicates that the city is experiencing rain. This naturally occurs when
+              a cold-front passes through and lowers the water vapor capacity of the air,
+              thus raising the humidity.
+            </p>
+            <p>
+              Humidity of 0% is isolated to cities with a latitude greater than 60
+              degrees. This is likely due to the fact that this is close to the
+              Arctic Circle, and unusually low temperatures are needed to allow to 
+              relative humidity to approach 0%. I have heard anecdotal evidence of
+              some areas of the Middle East achieving 0% humidity, but perhaps they
+              were exaggerations.
             </p>
           </div>
         </main>
