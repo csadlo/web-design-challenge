@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><h2>Latitude</h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item h5 dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item active" href="Latitude_vs_MaxTemp.html">Latitude VS. Max Temperature</a>
+              <a class="dropdown-item" href="Latitude_vs_Humidity.html">Latitude VS. Humidity</a>
+              <a class="dropdown-item" href="Latitude_vs_Cloudiness.html">Latitude VS. Cloudiness</a>
+              <a class="dropdown-item" href="Latitude_vs_WindSpeed.html">Latitude VS. Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="Comparisons.html" tabindex="-1" aria-disabled="true">Comparison</a>
+          </li>
+          <li class="nav-item h5">
+            <a class="nav-link" href="Data.html" tabindex="-1" aria-disabled="true">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row flex-nowrap border-top">
+        <nav class="col-md-3 bd-sidebar bg-light d-md-block collapse py-3">
+          <h4>Visualize vs. </h4>
+          <ul class="nav flex-column">
+            <li class="nav-item by-5 border">
+              <a class="nav-link" href="Latitude_vs_MaxTemp.html">
+                <img class="img-thumbnail" src="assets\images\Latitude_vs_MaxTemp.png">
+                Maximum Temperature
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Latitude_vs_Humidity.html">
+                <img class="img-thumbnail" src="assets\images\Latitude_vs_Humidity.png">
+                Humidity
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Latitude_vs_Cloudiness.html">
+                <img class="img-thumbnail" src="assets\images\Latitude_vs_Cloudiness.png">
+                Cloudiness
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Latitude_vs_WindSpeed.html">
+                <img class="img-thumbnail" src="assets\images\Latitude_vs_WindSpeed.png">
+                Wind Speed
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto px-md-4">
+          <div class="d-flex justify-content-between align-items-center pt-3 pb-3 mb-3 border-bottom">
+            <h1 class="h2">Summary: Latitude vs X</h1>
+          </div>
+    
+          <h2>
+            What is latitude?
+          </h2>
+          <div class="py-3">
+            <p>
+              "In geography, latitude is a geographic coordinate that specifies the north–south position of a point on the Earth's surface. Latitude is an angle (...) which ranges from 0° at the Equator to 90° (North or South) at the poles. Lines of constant latitude, or parallels, run east–west as circles parallel to the equator. Latitude is used together with longitude to specify the precise location of features on the surface of the Earth. On its own, the term latitude should be taken to be the geodetic latitude as defined below. Briefly, geodetic latitude at a point is the angle formed by the vector perpendicular (or normal) to the ellipsoidal surface from that point, and the equatorial plane. Also defined are six auxiliary latitudes that are used in special applications."
+              <cite>-- <a href="https://en.wikipedia.org/wiki/Latitude">Wikipedia</a></cite>
+            </p>
+          </div>
+          <p>
+            This project is a website for users to analyze the differences between weather data of various cities around the world and compare with the latitude of the city centre. It was built using data from a previous project including softwares Pandas, MatPlotLib, and Python. The website itself is contructed using HTML, CSS, and Bootstrap.
+          </p>   
+        </main>
+      </div>
+        
+      </div>
+    </div>
+
+    <div>
+      <br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
